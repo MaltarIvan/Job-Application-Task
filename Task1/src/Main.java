@@ -82,7 +82,7 @@ public class Main {
         }
     }
 
-    private static int doMagic(Niz A) {
+    public static int doMagic(Niz A) {
         int min = A.prefiksNiza(1) + A.sufiksNiza(1);
         int minIndex = 1;
         for (int j = 2; j <= A.getN(); j ++) {

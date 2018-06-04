@@ -61,7 +61,7 @@ public class Main {
                     try {
                         int mass = Integer.parseInt(scanner.next());
                         if (mass >= 1 && mass <= 1000) {
-                            cookieMasses[k] = Integer.parseInt(scanner.next());
+                            cookieMasses[k] = mass;
                         }else {
                             System.out.println("Wrong input!");
                             continue;

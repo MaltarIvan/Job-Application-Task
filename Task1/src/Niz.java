@@ -29,7 +29,7 @@ public class Niz {
         N = n;
     }
 
-    public int prefiksNiza(int i) {
+    public int prefiksSuma(int i) {
         if (i < 0 || i > N) {
             throw new IllegalArgumentException();
         }
@@ -40,7 +40,7 @@ public class Niz {
         return sum;
     }
 
-    public int sufiksNiza(int i) {
+    public int sufiksSuma(int i) {
         if (i < 0 || i > N) {
             throw new IllegalArgumentException();
         }

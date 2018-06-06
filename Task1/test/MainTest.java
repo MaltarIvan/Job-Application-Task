@@ -1,5 +1,6 @@
 import org.junit.Before;
 import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by Maltar on 4.6.2018..
@@ -16,7 +17,7 @@ public class MainTest {
 
     @Test
     public void mainTest() {
-        int expected1 = 1;
-        int expected2 = 2;
+        assertEquals(1, Main.doMagic(A1));
+        assertEquals(2, Main.doMagic(A2));
     }
 }

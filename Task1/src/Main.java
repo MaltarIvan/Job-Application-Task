@@ -1,4 +1,3 @@
-import java.text.ParseException;
 import java.util.Scanner;
 
 /**
@@ -83,10 +82,10 @@ public class Main {
     }
 
     public static int doMagic(Niz A) {
-        int min = A.prefiksNiza(1) + A.sufiksNiza(1);
+        int min = A.prefiksSuma(1) + A.sufiksSuma(1);
         int minIndex = 1;
         for (int j = 2; j <= A.getN(); j ++) {
-            int sum = A.prefiksNiza(j) + A.sufiksNiza(j);
+            int sum = A.prefiksSuma(j) + A.sufiksSuma(j);
             if (sum <  min) {
                 min = sum;
                 minIndex = j;
